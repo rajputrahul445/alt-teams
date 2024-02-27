@@ -27,6 +27,15 @@ html {
          url('../fonts/TestFoundersGroteskTextLight.ttf') format('truetype'),
          url('../fonts/TestFoundersGroteskTextLight.svg#TestFoundersGroteskTextLight') format('svg');
 }
+@font-face {
+    font-family: 'TestFoundersGroteskTextMedium';
+    src: url('../fonts/TestFoundersGroteskTextMedium.eot');
+    src: url('../fonts/TestFoundersGroteskTextMedium.eot') format('embedded-opentype'),
+         url('../fonts/TestFoundersGroteskTextMedium.woff2') format('woff2'),
+         url('../fonts/TestFoundersGroteskTextMedium.woff') format('woff'),
+         url('../fonts/TestFoundersGroteskTextMedium.ttf') format('truetype'),
+         url('../fonts/TestFoundersGroteskTextMedium.svg#TestFoundersGroteskTextMedium') format('svg');
+}
 
   section{
     padding: 70px 0;
@@ -104,10 +113,11 @@ html {
   
   nav#mainNav .nav-item > a {
       font-size: 15px;
-      color: #ffffff;
-      font-weight: 500;
+      color: #C3C3C3;
       padding: 10px 6px;
       position: relative;
+      font-family: 'TestFoundersGroteskTextLight';
+      text-transform: uppercase;
       
   }
 
@@ -120,6 +130,8 @@ html {
     border-image: linear-gradient(to right, #C675AA 0%, #6B5295 50%, #232554 80%, #1A1E3C 100%) 1;
     border-radius: 8px !important;
     padding: 10px 20px !important;
+    font-family: 'TestFoundersGroteskTextMedium' !important;
+    color: #fff !important;
 }
 
 .navBtn:hover {
@@ -245,21 +257,22 @@ html {
   .sliderContent h1 {
       line-height: 1.1;
       color: #fff;
-      font-weight: 900; 
-      font-size: 72px;
-      
+      font-size: 60px;
+      font-family: 'TestFoundersGroteskTextLight';
   }
   .sliderContent h1 span{
     background: #F1DEEC;
-    background: linear-gradient(to right, #F1DEEC 0%, #CB7DB0 50%, #8E60A1 50%, #705599 100%);
+    background: linear-gradient(to right, #F1DEEC 0%, #CB7DB0 50%, #8E60A1 70%, #705599 100%);
     -webkit-background-clip: text;
+    font-family: 'TestFoundersGroteskTextMedium';
     -webkit-text-fill-color: transparent;
   }
   .sliderContent h3 {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 20px;
       line-height: 1.4;
       color: #C3C3C3;
+      font-family: 'TestFoundersGroteskTextLight';
   }
   
   .sectionHeding h3 {
@@ -330,16 +343,16 @@ html {
 }
 
 .bxWrp {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     justify-content: center;
 }
 .bx {
     padding: 50px;
     position: relative;
     background: #131313;
-    width: 40%;
+    width: 35%;
     border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to right, #C675AA 0%, #6B5295 50%, #232554 80%, #1A1E3C 100%) 1;
@@ -347,7 +360,7 @@ html {
 }
 .bx:hover {
     background: rgb(210,145,188);
-background: linear-gradient(180deg, rgba(210,145,188,1) 0%, rgb(95 95 95) 40%, rgb(0 0 0) 100%);
+background: linear-gradient(180deg, #E5C0D9 0%, #C775AB 30%, #0A0A0A 55%, rgb(0 0 0) 100%);
   transition: all 500ms ease;
 }
 .bx h3 {
@@ -403,8 +416,11 @@ background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, r
 }
 
 .quoteBullet ul li {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    font-family: 'TestFoundersGroteskTextLight';
+    text-transform: uppercase;
+    line-height: 1.8;
 }
 .bxHover {
     padding: 30px;
@@ -417,6 +433,7 @@ background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, r
     font-size: 24px;
     color: #fff;
     margin: 0 0 20px;
+    min-height: 60px;
 }
 
 .bxHover img {
@@ -474,12 +491,13 @@ background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, r
     background: #CB7FB1;
 }
 .priceComp table tr td {
-    color: #fff !important;
-    padding: 15px;
+    color: #F5F5F5 !important;
+    padding: 20px 15px;
 }
 .priceComp table tr td p{
     margin: 0;
     font-size: 20px;
+    color: #F5F5F5;
 }
 .priceComp table tr th{
     text-align: center;
@@ -511,6 +529,12 @@ background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, r
 
 .priceComp table tr:hover:not(:last-child) td{
     background: #383264 !important;
+}
+.priceComp table tr td:nth-child(3) i{
+    color: #383264;
+}
+.priceComp table tr:hover td:nth-child(3) i{
+    color: #fff;
 }
 .priceComp table tr:last-child td{
     background: none;
@@ -563,7 +587,13 @@ div#accordion h5 {
     margin-bottom: 20px;
     font-size: 12px;
 }
-
+section.testimonial.aos-init {
+    opacity: 1 !important;
+    transform: translateZ(0) !important;
+}
+.testimonialWrp{
+    margin-top: 110px;
+}
 .testimonialWrp, .testimonialWrpBottom {
     display: flex;
     justify-content: space-evenly;
@@ -581,7 +611,8 @@ div#accordion h5 {
     border-radius: 15px;
 }
 .testimonialWrp .testimonialBx:first-child{
-    transform: rotate(-10deg);
+    transform: rotate(-10deg) translate(70px);
+    transition: all 500ms ease;
 }
 .testimonialBx .d-flex {
     gap: 10px;
@@ -593,6 +624,7 @@ div#accordion h5 {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    font-family: 'TestFoundersGroteskTextLight';
 }
 
 .testimonialBx p:after {
