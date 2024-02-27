@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
   }
-  body {font-family: 'TestFoundersGroteskTextRegular', sans-serif;background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
+  body {font-family: 'GilroyRegular', sans-serif;background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
   a, a:hover, a:focus {  text-decoration: none;  transition: all 400ms ease; }
   img{max-width: 100%}
   /* h1, h2, h3, h4, h5, h6 {  } */
@@ -36,9 +36,29 @@ html {
          url('../fonts/TestFoundersGroteskTextMedium.ttf') format('truetype'),
          url('../fonts/TestFoundersGroteskTextMedium.svg#TestFoundersGroteskTextMedium') format('svg');
 }
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('../fonts/GilroyRegular.eot');
+    src: url('../fonts/GilroyRegular.eot') format('embedded-opentype'),
+         url('../fonts/GilroyRegular.woff2') format('woff2'),
+         url('../fonts/GilroyRegular.woff') format('woff'),
+         url('../fonts/GilroyRegular.ttf') format('truetype'),
+         url('../fonts/GilroyRegular.svg#GilroyRegular') format('svg');
+}
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('../fonts/GilroyMedium.eot');
+    src: url('../fonts/GilroyMedium.eot') format('embedded-opentype'),
+         url('../fonts/GilroyMedium.woff2') format('woff2'),
+         url('../fonts/GilroyMedium.woff') format('woff'),
+         url('../fonts/GilroyMedium.ttf') format('truetype'),
+         url('../fonts/GilroyMedium.svg#GilroyMedium') format('svg');
+}
+
 
   section{
     padding: 70px 0;
+    background: #080808;
   }
   .underLine {
       text-decoration: underline;
@@ -128,14 +148,18 @@ html {
     border-width: 1px;
     border-style: solid;
     border-image: linear-gradient(to right, #C675AA 0%, #6B5295 50%, #232554 80%, #1A1E3C 100%) 1;
-    border-radius: 8px !important;
     padding: 10px 20px !important;
-    font-family: 'TestFoundersGroteskTextMedium' !important;
+    font-family: 'GilroyMedium' !important;
     color: #fff !important;
+    /* box-shadow: 3px 3px 0px #3e3e3e; */
+    transition: all 500ms ease;
 }
 
 .navBtn:hover {
     color: #C675AA !important;
+    box-shadow: 0px 0px 0px #3e3e3e;
+    transition: all 500ms ease;
+    transform: translate(3px, 3px);
 }
   nav#mainNav .nav-item {
       padding: 0 15px;
@@ -246,7 +270,10 @@ html {
   .mainSlider{
       background: #000;
       background-size: cover !important;
-      padding: 150px 0 100px;
+      padding:50px 0;
+      min-height: calc(100vh - 90px);
+      display: flex;
+      align-items: center;
   }
   
   .sliderContent {
@@ -255,7 +282,7 @@ html {
   }
   
   .sliderContent h1 {
-      line-height: 1.1;
+      line-height: 70px;
       color: #fff;
       font-size: 60px;
       font-family: 'TestFoundersGroteskTextLight';
@@ -270,7 +297,7 @@ html {
   .sliderContent h3 {
       font-weight: 300;
       font-size: 20px;
-      line-height: 1.4;
+      line-height: 40px;
       color: #C3C3C3;
       font-family: 'TestFoundersGroteskTextLight';
   }
@@ -288,19 +315,28 @@ html {
       color: #ffffff;
   }
   .whiteBtn, .blackBtn {
-    padding: 10px 20px;
+    padding: 15px 25px;
     background: #FFFFFF;
     color: #000 !important;
     border-radius: 8px;
     font-size: 16px;
     text-transform: uppercase;
     display: inline-flex;
+    /* box-shadow: 3px 3px 0px #2e2e2e; */
+    transition: all 500ms ease;
+}
+.whiteBtn{
+    /* box-shadow: 3px 3px 0px #888888;  */
 }
 .blackBtn{
     background: #000;
     color: #fff !important;
 }
- 
+.blackBtn:hover,  .whiteBtn:hover, .lineBtn:hover{
+    box-shadow: 0px 0px 0px #888888;
+    transition: all 500ms ease;
+    transform: translate(3px, 3px);
+}
   .sectionHeding {
       position: relative;
   }
@@ -316,7 +352,7 @@ html {
   }
   .lineBtn {
       font-size: 16px;
-      padding: 10px 20px;
+      padding: 15px 25px;
       color: #fff;
       border: solid 1px #fff;
       border-radius: 8px;
@@ -325,6 +361,7 @@ html {
       gap: 10px;
       align-items: center;
       text-transform: uppercase;
+      /* box-shadow: 3px 3px 0px #888888; */
   }
   
   .lineBtn:hover {
@@ -360,8 +397,10 @@ html {
 }
 .bx:hover {
     background: rgb(210,145,188);
-background: linear-gradient(180deg, #E5C0D9 0%, #C775AB 30%, #0A0A0A 55%, rgb(0 0 0) 100%);
-  transition: all 500ms ease;
+    background: linear-gradient(180deg, #E5C0D9 0%, #C775AB 30%, #0A0A0A 55%, rgb(0 0 0) 100%);
+    transition: all 500ms ease;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #000;
 }
 .bx h3 {
     font-size: 100px;
@@ -371,6 +410,8 @@ background: linear-gradient(180deg, #E5C0D9 0%, #C775AB 30%, #0A0A0A 55%, rgb(0 
 .bx p {
     color: #F0F0F0;
     font-size: 20px;
+    margin: 50px 0 0;
+    font-family: 'TestFoundersGroteskTextLight';
 }
 
 .bx img {
@@ -580,6 +621,7 @@ div#accordion .card {
 #accordion .card-body {
     padding: 0;
     color: #C3C3C3;
+    margin-top: 10px;
 }
 div#accordion h5 {
     color: #6F84FF;

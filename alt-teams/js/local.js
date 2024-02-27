@@ -40,9 +40,9 @@ $(document).ready(function(){
           }
       });
    
-    $('.threeSlider').owlCarousel({
+    $('.sevenSlider').owlCarousel({
           loop:true,
-          margin:0,
+          margin:20,
           nav:false,
           center: true,
           autoplay:true,
@@ -51,15 +51,15 @@ $(document).ready(function(){
           navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
           responsive:{
               0:{
-                  items:1,
+                  items:3,
                   center:false
               },
               600:{
-                  items:2,
+                  items:4,
                   center:false
               },
               1000:{
-                  items:3
+                  items:7
               }
           }
       });
