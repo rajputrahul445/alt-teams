@@ -57,7 +57,7 @@ html {
 
 
   section{
-    padding: 70px 0;
+    padding: 100px 0;
     background: #080808;
   }
   .underLine {
@@ -113,7 +113,7 @@ html {
       background: #000 !important;
   }
   .navbar-brand img {
-      max-height: 60px;
+      max-width: 200px;
   }
   nav#mainNav .nav-item > a img {
       max-height: 16px;
@@ -134,7 +134,7 @@ html {
   nav#mainNav .nav-item > a {
       font-size: 15px;
       color: #C3C3C3;
-      padding: 10px 6px;
+      padding: 25px 6px;
       position: relative;
       font-family: 'TestFoundersGroteskTextLight';
       text-transform: uppercase;
@@ -145,14 +145,16 @@ html {
       color: #C675AA;
   }
   .navBtn {
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(to right, #C675AA 0%, #6B5295 50%, #232554 80%, #1A1E3C 100%) 1;
-    padding: 10px 20px !important;
-    font-family: 'GilroyMedium' !important;
+    border-image: linear-gradient(to right, #C675AA 0%, #6B5295 50%, #232554 80%, #1A1E3C 100%) 1; */
+    padding: 15px 20px !important;
+    background: url(../images/btn-bg.png) 0 0 no-repeat;
+    /* font-family: 'GilroyMedium' !important;
     color: #fff !important;
     /* box-shadow: 3px 3px 0px #3e3e3e; */
     transition: all 500ms ease;
+    background-size: cover;
 }
 
 .navBtn:hover {
@@ -291,7 +293,7 @@ html {
     background: #F1DEEC;
     background: linear-gradient(to right, #F1DEEC 0%, #CB7DB0 50%, #8E60A1 70%, #705599 100%);
     -webkit-background-clip: text;
-    font-family: 'TestFoundersGroteskTextMedium';
+    /* font-family: 'TestFoundersGroteskTextMedium'; */
     -webkit-text-fill-color: transparent;
   }
   .sliderContent h3 {
@@ -299,7 +301,7 @@ html {
       font-size: 20px;
       line-height: 40px;
       color: #C3C3C3;
-      font-family: 'TestFoundersGroteskTextLight';
+      /* font-family: 'TestFoundersGroteskTextLight'; */
   }
   
   .sectionHeding h3 {
@@ -339,6 +341,7 @@ html {
 }
   .sectionHeding {
       position: relative;
+      margin-bottom: 60px;
   }
   .sliderContent a {
       color: #fff;
@@ -435,14 +438,16 @@ html {
     align-items: center;
     gap: 100px;
     position: relative;
-    background: rgb(28,31,69);
-background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, rgba(142,88,132,1) 68%, rgba(175,163,178,1) 100%);
+    /* background: rgb(28,31,69);
+    background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, rgba(142,88,132,1) 68%, rgba(175,163,178,1) 100%); */
     border-radius: 10px;
-    padding: 15px;
-    padding-left: 200px;
+    padding: 23px;
+    padding-left: 250px;
     padding-right: 40px;
     overflow: hidden;
     justify-content: space-between;
+    background: url(../images/quote-bg.png) 0 0 no-repeat;
+    background-size: cover;
 }
 
 .quoteBx .qt {
@@ -568,15 +573,15 @@ background: linear-gradient(90deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, r
 }
 
 
-.priceComp table tr:hover:not(:last-child) td{
+/* .priceComp table tr:hover:not(:last-child) td{
     background: #383264 !important;
-}
+} */
 .priceComp table tr td:nth-child(3) i{
     color: #383264;
 }
-.priceComp table tr:hover td:nth-child(3) i{
+/* .priceComp table tr:hover td:nth-child(3) i{
     color: #fff;
-}
+} */
 .priceComp table tr:last-child td{
     background: none;
 }
@@ -666,7 +671,7 @@ section.testimonial.aos-init {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    font-family: 'TestFoundersGroteskTextLight';
+    /* font-family: 'TestFoundersGroteskTextLight'; */
 }
 
 .testimonialBx p:after {
@@ -732,6 +737,9 @@ section.testimonial.aos-init.aos-animate .testimonialWrpBottom .testimonialBx:nt
     transform: rotate(0deg) translate(0px, 0px);
     transition: all 500ms ease;
 }
+.globalMap{
+    background: #141414;
+}
 .globalMap h2 {
     background: #F1DEEC;
     background: linear-gradient(to right, #F1DEEC 0%, #CB7DB0 50%, #8E60A1 50%, #705599 100%);
@@ -779,7 +787,9 @@ background: linear-gradient(239deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, 
   .footerSocial li a i {
       color: #fff;
   }
-  
+  .footerlogo img{
+    max-width: 160px;
+  }
   .footerlogo h3 {
     color: #fff;
     font-size: 30px;
@@ -792,13 +802,14 @@ background: linear-gradient(239deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, 
 .footerContentWrp {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 18px;
     margin-bottom: 20px;
 }
 
 .footerContent h3 {
     color: #fff;
     font-size: 16px;
+    /* min-height: 40px; */
 }
 
 .footerContent ul {
