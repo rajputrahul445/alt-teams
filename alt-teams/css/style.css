@@ -266,7 +266,7 @@ html {
   }
   .mainSlider img {
       object-fit: cover;
-      width: 100% !important;
+      max-width: 330px;
   }
   
   .mainSlider{
