@@ -610,7 +610,7 @@ section.testimonial.aos-init {
 }
 .testimonialWrpBottom{
     position: relative;
-    top: -40px;
+    top: 40px;
 }
 .testimonialBx {
     padding: 30px;
