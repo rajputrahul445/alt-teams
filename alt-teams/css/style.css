@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
   }
-  body {font-family: 'Lato', sans-serif;background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
+  body {font-family: 'Lato', sans-serif; font-weight: 300; background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
   a, a:hover, a:focus {  text-decoration: none;  transition: all 400ms ease; }
   img{max-width: 100%}
   /* h1, h2, h3, h4, h5, h6 {  } */
@@ -69,7 +69,8 @@ html {
       background: #000 !important;
   }
   .navbar-brand img {
-      max-width: 200px;
+      /* max-width: 200px; */
+      height: 40px;
   }
   nav#mainNav .nav-item > a img {
       max-height: 16px;
@@ -257,35 +258,38 @@ html {
   }
   .sliderContent h3 {
       font-weight: 300;
-      font-size: 20px;
+      font-size: 24px;
       line-height: 40px;
       color: #C3C3C3;
       /* font-family: 'Lato'; */
   }
   
   .sectionHeding h3 {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 18px;
       position: relative;
       z-index: 1;
       color: #C3C3C3;
+      line-height: 30px;
   }
   .sectionHeding h2 {
       font-style: normal;
       font-size: 40px;
       color: #ffffff;
       font-family: 'Bricolage Grotesque';
+      margin-bottom: 20px;
   }
   .whiteBtn, .blackBtn {
     padding: 15px 25px;
     background: #FFFFFF;
     color: #000 !important;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     display: inline-flex;
     /* box-shadow: 3px 3px 0px #2e2e2e; */
     transition: all 500ms ease;
+    font-weight: 700;
 }
 .whiteBtn{
     /* box-shadow: 3px 3px 0px #888888;  */
@@ -314,7 +318,7 @@ html {
       font-size: 40px;
   }
   .lineBtn {
-      font-size: 16px;
+      font-size: 18px;
       padding: 15px 25px;
       color: #fff;
       border: solid 1px #fff;
@@ -324,6 +328,7 @@ html {
       gap: 10px;
       align-items: center;
       text-transform: uppercase;
+      font-weight: 700;
       /* box-shadow: 3px 3px 0px #888888; */
   }
   
@@ -535,11 +540,23 @@ html {
 
 
 /* .priceComp table tr:hover:not(:last-child) td{
-    background: #383264 !important;
+    background: #202020 !important;
 } */
-.priceComp table tr td:nth-child(3) i{
-    color: #383264;
+/* .priceComp table tr:not(:last-child) {
+    transform: scale(1);
+    transition: all 500ms ease;
 }
+.priceComp table tr:hover:not(:last-child) {
+    transform: scale(1.01);
+    transition: all 500ms ease;
+    background: #000;
+}
+.priceComp table tr:hover:not(:last-child) td{
+    background: #000;
+} */
+/* .priceComp table tr td:nth-child(3) i{
+    color: #383264;
+} */
 /* .priceComp table tr:hover td:nth-child(3) i{
     color: #fff;
 } */
