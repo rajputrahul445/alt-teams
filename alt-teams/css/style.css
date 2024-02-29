@@ -1,59 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
   }
-  body {font-family: 'GilroyRegular', sans-serif;background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
+  body {font-family: 'Lato', sans-serif;background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
   a, a:hover, a:focus {  text-decoration: none;  transition: all 400ms ease; }
   img{max-width: 100%}
   /* h1, h2, h3, h4, h5, h6 {  } */
   input, button { outline: none; box-shadow: none;  }
   
-  @font-face {
-    font-family: 'TestFoundersGroteskTextRegular';
-    src: url('../fonts/TestFoundersGroteskTextRegular.eot');
-    src: url('../fonts/TestFoundersGroteskTextRegular.eot') format('embedded-opentype'),
-         url('../fonts/TestFoundersGroteskTextRegular.woff2') format('woff2'),
-         url('../fonts/TestFoundersGroteskTextRegular.woff') format('woff'),
-         url('../fonts/TestFoundersGroteskTextRegular.ttf') format('truetype'),
-         url('../fonts/TestFoundersGroteskTextRegular.svg#TestFoundersGroteskTextRegular') format('svg');
-}
-@font-face {
-    font-family: 'TestFoundersGroteskTextLight';
-    src: url('../fonts/TestFoundersGroteskTextLight.eot');
-    src: url('../fonts/TestFoundersGroteskTextLight.eot') format('embedded-opentype'),
-         url('../fonts/TestFoundersGroteskTextLight.woff2') format('woff2'),
-         url('../fonts/TestFoundersGroteskTextLight.woff') format('woff'),
-         url('../fonts/TestFoundersGroteskTextLight.ttf') format('truetype'),
-         url('../fonts/TestFoundersGroteskTextLight.svg#TestFoundersGroteskTextLight') format('svg');
-}
-@font-face {
-    font-family: 'TestFoundersGroteskTextMedium';
-    src: url('../fonts/TestFoundersGroteskTextMedium.eot');
-    src: url('../fonts/TestFoundersGroteskTextMedium.eot') format('embedded-opentype'),
-         url('../fonts/TestFoundersGroteskTextMedium.woff2') format('woff2'),
-         url('../fonts/TestFoundersGroteskTextMedium.woff') format('woff'),
-         url('../fonts/TestFoundersGroteskTextMedium.ttf') format('truetype'),
-         url('../fonts/TestFoundersGroteskTextMedium.svg#TestFoundersGroteskTextMedium') format('svg');
-}
-@font-face {
-    font-family: 'GilroyRegular';
-    src: url('../fonts/GilroyRegular.eot');
-    src: url('../fonts/GilroyRegular.eot') format('embedded-opentype'),
-         url('../fonts/GilroyRegular.woff2') format('woff2'),
-         url('../fonts/GilroyRegular.woff') format('woff'),
-         url('../fonts/GilroyRegular.ttf') format('truetype'),
-         url('../fonts/GilroyRegular.svg#GilroyRegular') format('svg');
-}
-@font-face {
-    font-family: 'GilroyMedium';
-    src: url('../fonts/GilroyMedium.eot');
-    src: url('../fonts/GilroyMedium.eot') format('embedded-opentype'),
-         url('../fonts/GilroyMedium.woff2') format('woff2'),
-         url('../fonts/GilroyMedium.woff') format('woff'),
-         url('../fonts/GilroyMedium.ttf') format('truetype'),
-         url('../fonts/GilroyMedium.svg#GilroyMedium') format('svg');
-}
 
 
   section{
@@ -136,7 +92,7 @@ html {
       color: #C3C3C3;
       padding: 25px 6px;
       position: relative;
-      font-family: 'TestFoundersGroteskTextLight';
+      font-family: 'Lato';
       text-transform: uppercase;
       
   }
@@ -287,7 +243,8 @@ html {
       line-height: 70px;
       color: #fff;
       font-size: 60px;
-      font-family: 'TestFoundersGroteskTextLight';
+      font-family: 'Bricolage Grotesque';
+      font-weight: 300;
   }
   .sliderContent h1 span{
     background: #F1DEEC;
@@ -295,13 +252,14 @@ html {
     -webkit-background-clip: text;
     /* font-family: 'TestFoundersGroteskTextMedium'; */
     -webkit-text-fill-color: transparent;
+    font-weight: 500;
   }
   .sliderContent h3 {
       font-weight: 300;
       font-size: 20px;
       line-height: 40px;
       color: #C3C3C3;
-      /* font-family: 'TestFoundersGroteskTextLight'; */
+      /* font-family: 'Lato'; */
   }
   
   .sectionHeding h3 {
@@ -315,6 +273,7 @@ html {
       font-style: normal;
       font-size: 40px;
       color: #ffffff;
+      font-family: 'Bricolage Grotesque';
   }
   .whiteBtn, .blackBtn {
     padding: 15px 25px;
@@ -414,7 +373,7 @@ html {
     color: #F0F0F0;
     font-size: 20px;
     margin: 50px 0 0;
-    font-family: 'TestFoundersGroteskTextLight';
+    font-family: 'Lato';
 }
 
 .bx img {
@@ -464,7 +423,7 @@ html {
 .quoteBullet ul li {
     font-size: 18px;
     color: #fff;
-    font-family: 'TestFoundersGroteskTextLight';
+    font-family: 'Lato';
     text-transform: uppercase;
     line-height: 1.8;
 }
@@ -622,7 +581,9 @@ div#accordion .card {
     margin-bottom: 15px;
     border-bottom: solid 1px #373737;
 }
-
+section.Collaborate img {
+    max-width: 70%;
+}
 #accordion .card-body {
     padding: 0;
     color: #C3C3C3;
@@ -671,7 +632,7 @@ section.testimonial.aos-init {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    /* font-family: 'TestFoundersGroteskTextLight'; */
+    /* font-family: 'Lato'; */
 }
 
 .testimonialBx p:after {
@@ -746,6 +707,7 @@ section.testimonial.aos-init.aos-animate .testimonialWrpBottom .testimonialBx:nt
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 44px;
+    font-family: 'Bricolage Grotesque';
 }
 
 .globalMap p {
@@ -820,7 +782,7 @@ background: linear-gradient(239deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, 
 
 .footerContent ul a {
     color: #C6C6C6;
-    font-family: 'TestFoundersGroteskTextLight';
+    font-family: 'Lato';
     line-height: 2;
 }
 
