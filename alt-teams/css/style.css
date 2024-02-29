@@ -242,9 +242,9 @@ html {
   .sliderContent h1 {
       line-height: 70px;
       color: #fff;
-      font-size: 60px;
+      font-size: 56px;
       font-family: 'Bricolage Grotesque';
-      font-weight: 100;
+      font-weight: 300;
   }
   .sliderContent h1 span{
     background: #F1DEEC;
@@ -252,7 +252,7 @@ html {
     -webkit-background-clip: text;
     /* font-family: 'TestFoundersGroteskTextMedium'; */
     -webkit-text-fill-color: transparent;
-    font-weight: 500;
+    font-weight: 800;
   }
   .sliderContent h3 {
       font-weight: 300;
