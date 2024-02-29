@@ -718,9 +718,9 @@ section.testimonial.aos-init.aos-animate .testimonialWrpBottom .testimonialBx:nt
 
   .mainFooter {
       padding: 90px 0 10px;
-      background: rgb(28,31,69);
-background: linear-gradient(239deg, rgba(28,31,69,1) 0%, rgba(84,66,119,1) 39%, rgba(142,88,132,1) 68%, rgba(197,168,204,1) 100%);
-  }
+      background: rgb(36,37,85);
+    background: linear-gradient(312deg, rgba(36,37,85,1) 0%, rgba(60,53,107,1) 51%, rgba(159,102,163,1) 82%, rgba(217,161,198,1) 100%);
+    }
   
   .mainFooter h3 {
       font-style: normal;
