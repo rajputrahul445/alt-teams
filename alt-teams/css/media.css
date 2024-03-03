@@ -264,6 +264,23 @@
     .navbar-brand img {
         height: 30px;
     }
+    .prColBlack{
+        display: none;
+    }
+    .prCol1, .prColColor {
+        width: 50%;
+    }
+    
+    .prCol1Col {
+        font-size: 16px;
+    }
+    
+    .prCol1Col img {
+        width: 25px;
+    }
+    .prHeader {
+        height: 60px;
+    }
 
 }
 @media only screen and (max-width: 767px) {

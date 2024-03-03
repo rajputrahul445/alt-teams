@@ -70,7 +70,7 @@ html {
   }
   .navbar-brand img {
       /* max-width: 200px; */
-      height: 40px;
+      height: 55px;
   }
   nav#mainNav .nav-item > a img {
       max-height: 16px;
@@ -91,7 +91,7 @@ html {
   nav#mainNav .nav-item > a {
       font-size: 15px;
       color: #C3C3C3;
-      padding: 25px 6px;
+      padding: 20px 6px;
       position: relative;
       font-family: 'Lato';
       text-transform: uppercase;
@@ -839,7 +839,106 @@ ul.listInline.footerSocial {
 ul.listInline.footerSocial li a {
     color: #fff;
 }
-  
-  
-  
+
+
+
+
+.prWrp {
+    display: flex;
+}
+
+.prColBlack, .prColColor {
+    width: 22%;
+    text-align: center;
+}
+
+.prCol1 {
+    width: 30%;
+}
+
+.prColBlack {
+    background: #1B1B1B;
+}
+
+.prCol1Col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    color: #F5F5F5;
+}
+
+.prHeader {
+    height: 100px;
+}
+
+.prCol1Col p {
+    margin: 0;
+}
+
+.prCol1Col {
+    height: 90px;
+}
+
+.prCol1Header {
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    position: relative;
+}
+
+.prColBlackCol {
+    height: 90px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prColBlackCol i.fas.fa-times {
+    color: #F87171;
+}
+
+.prColColor .prHeader span {
+    font-size: 12px;
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    transform: translate(-50%);
+    top: -40px;
+    background: #16182B;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.prColColor {
+    background: rgb(180,110,167);
+    background: linear-gradient(180deg, rgba(180,110,167,1) 0%, rgba(207,136,183,1) 26%, rgba(216,160,197,1) 51%, rgba(220,169,203,1) 76%, rgba(226,184,212,1) 100%);
+}
+.prColColor .prCol1Header:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 20px;
+    background: rgb(180,110,167);
+}
+.prColColor .prCol1Header{
+    font-size: 32px;
+    font-weight: 500;
+}
+.prBtn, .prBlank {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prBlank{
+    background: #0A0A0A;
+}  
+.prColColor .fa-check {
+    color: #1B204D;
+}  
   
