@@ -1061,3 +1061,16 @@ border-radius: 0px;       /* roundness of the scroll thumb */
 .owl-carousel.slider.owl-loaded.owl-drag .owl-dots button.active {
     background: #fff;
 }
+.thankYou {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.thankYou h3 {
+    font-size: 36px;
+    color: #C9C9C9;
+    font-weight: 300;
+    margin: 50px 0;
+}
