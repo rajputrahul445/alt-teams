@@ -8,10 +8,12 @@ html {
   a, a:hover, a:focus {  text-decoration: none;  transition: all 400ms ease; }
   img{max-width: 100%}
   /* h1, h2, h3, h4, h5, h6 {  } */
-  input, button { outline: none; box-shadow: none;  }
+  input, button { outline: none !important; box-shadow: none;  }
   
 
-
+  .full-width{
+    width: 100%;
+  }
   section{
     padding: 100px 0;
     background: #080808;
@@ -941,4 +943,121 @@ ul.listInline.footerSocial li a {
 .prColColor .fa-check {
     color: #1B204D;
 }  
-  
+
+/*===========Quote-page==============*/
+.formContent h3 {
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formContent label {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.inputBx {
+    margin-bottom: 20px;
+}
+
+.formContent .form-control {
+    background-color: #282828;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1;
+    padding: 11px 10px;
+    height: auto;
+    font-size: 14px;
+}
+
+.icoWrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icoBx p {
+    margin: 10px 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+.icoBx {
+    min-width: 110px;
+}
+select.form-control{
+    background: url(../images/arrow.png) 0 0 no-repeat;
+    background-position: 97% center;
+    -webkit-appearance: none; 
+    appearance: none;
+}
+  .removeBtn {
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    background: #F87171;
+    color: #000;
+    margin-bottom: 10px;
+    padding: 3px 7px;
+}
+
+.addmore {
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 4px 7px;
+}
+.form .row {
+    margin: 0 -20px;
+}
+
+.form .row .col-12 {
+    padding: 0 20px;
+}
+.formContent {
+    max-height: 330px;
+    overflow-x: auto;
+    padding-right: 20px;
+}
+.form .container {
+    padding: 0 20px;
+}
+/* width */
+
+.formContent::-webkit-scrollbar {
+width: 6px;               /* width of the entire scrollbar */
+}
+
+.formContent::-webkit-scrollbar-track {
+background: #6F6F6F;        /* color of the tracking area */
+}
+
+.formContent::-webkit-scrollbar-thumb {
+background-color: #fff;    /* color of the scroll thumb */
+border-radius: 0px;       /* roundness of the scroll thumb */
+}
+.owl-carousel.slider.owl-loaded.owl-drag .owl-dots {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    gap: 10px;
+}
+
+.owl-carousel.slider.owl-loaded.owl-drag .owl-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #9B9B9B;
+}
+
+.owl-carousel.slider.owl-loaded.owl-drag .owl-dots button.active {
+    background: #fff;
+}

@@ -281,6 +281,7 @@
     .prHeader {
         height: 60px;
     }
+    .formContent{max-height: 100%; overflow: visible; padding-right: 0px; margin-bottom: 50px;}
 
 }
 @media only screen and (max-width: 767px) {

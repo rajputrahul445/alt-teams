@@ -2,11 +2,10 @@ $(document).ready(function(){
       $('.slider').owlCarousel({
           loop:false,
           margin:20,
-          nav:true,
+          nav:false,
           autoplay:true,
           autoplayTimeout:10000,
           dots:true,
-          navText : ["<img src='images/arrow-left.png'/>","<img src='images/arrow.png'/>"],
           responsive:{
               0:{
                   items:1
