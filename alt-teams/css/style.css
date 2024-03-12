@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
   }
-  body {font-family: 'Lato', sans-serif; font-weight: 300; background: #000;overflow: auto;font-size: 14px;overflow-x: hidden;padding-top: 0;}
+  body {font-family: 'Lato', sans-serif; font-weight: 300; background: #000;overflow: auto;font-size: 14px;padding-top: 0;}
   a, a:hover, a:focus {  text-decoration: none;  transition: all 400ms ease; }
   img{max-width: 100%}
   /* h1, h2, h3, h4, h5, h6 {  } */
@@ -1021,9 +1021,13 @@ select.form-control{
     padding: 0 20px;
 }
 .formContent {
-    max-height: 330px;
+    /* max-height: 330px; */
     overflow-x: auto;
     padding-right: 20px;
+}
+.sticky-top{
+    z-index: 1;
+    top: 100px;
 }
 .form .container {
     padding: 0 20px;
